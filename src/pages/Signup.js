@@ -9,6 +9,7 @@ function Signup() {
     e.preventDefault();
     await axios.post('http://localhost:5000/api/auth/signup', form);
     alert('Account created');
+    window.location.href = '/home';
   };
 
   return (
